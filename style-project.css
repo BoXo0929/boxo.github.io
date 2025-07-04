@@ -1,0 +1,155 @@
+/* General Styles */
+body {
+  background-color: #f4f4f3;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #000;
+}
+
+/* Header */
+.header {
+  background-color: #f4f4f3;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 10px 0;
+}
+
+.logo-container {
+  text-align: center;
+}
+
+.logo {
+  width: 70px;
+  margin: 50px 0;
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+.menu li {
+  margin: 0 15px;
+}
+.menu a {
+  text-decoration: none;
+  color: #000;
+  font-size: 20px;
+  padding: 10px 15px;
+  transition: color 0.3s ease;
+  display: inline-block; /* 使 <a> 标签可以缩放 */
+  transition: transform 0.3s ease; /* 添加平滑过渡效果 */
+}
+.menu a:hover {
+  transform: scale(1.1); /* 放大 1.1 倍 */
+  color: #ff641c;
+}
+.menu a.active {
+  text-decoration: underline;
+  color: #ff641c;
+}
+
+.column {
+  width: 200px;
+}
+
+h3 {
+  font-size: 22px;
+  text-transform: uppercase;
+  color: #ff641c;
+}
+
+p {
+  max-width: 800px;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+/* Tool and Skill Section */
+.toolskill {
+  display: flex;
+  justify-content: center;
+  gap: 300px; /* Spacing between Tool and Skill */
+  margin-top: 50px; /* Added margin for better spacing */
+}
+.tool,
+.skill {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  list-style: none;
+  font-size: 18px;
+  line-height: 1.5; /* Adjusted line height for better readability */
+}
+.tool ul,
+.skill ul {
+  list-style: none;
+  padding-right: 50px;
+  margin: 0;
+}
+.tool li,
+.skill li {
+  list-style: none;
+  padding-left: 50px;
+  margin: 0;
+}
+.tool ul li,
+.skill ul li {
+  margin-bottom: 10px; /* Spacing between list items */
+}
+.title1 {
+  padding-top: 50px;
+}
+.title1,
+.timeline {
+  display: flex; /* 使用 flexbox 布局 */
+  justify-content: center; /* 水平居中 */
+  align-items: center; /* 垂直居中 */
+  width: 1500px;
+  height: auto;
+  margin: 0 auto; /* 如果需要让整个 .timeline 在页面中居中 */
+}
+
+/* Main Content */
+.container1 {
+  padding-top: 300px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container2,
+.container3,
+.container4 {
+  padding-top: 50px;
+  display: flex; /* 使用 flexbox 布局 */
+  flex-direction: column; /* 垂直排列子元素 */
+  justify-content: center; /* 垂直居中 */
+  align-items: center; /* 水平居中 */
+  margin: 0 auto; /* 让容器在页面中居中 */
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 100px;
+  padding: 20px 0;
+}
+.copyright {
+  font-size: 15px;
+}
+
+/* Location & Contact */
+.location-contact {
+  display: flex;
+  justify-content: center;
+  gap: 300px;
+  text-align: left;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
